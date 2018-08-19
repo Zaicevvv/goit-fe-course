@@ -2,33 +2,41 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: PlayfairDisplay;
+}
 .wrapper{
-    width: 1200px;
+    width: 900px;
     margin: 0 auto;
 }
-.navigation{
-    width: 550px;
+header{
+    width: 513px;
     margin: 0 auto;
     margin-top: 77px;
     margin-bottom: 77px;
 }
-.navigation a{
-    font-family: PlayfairDisplay;
-    color: #626262;
+ul{
+    font-size: 0;
+}
+a{
     font-size: 14px;
+}
+.navigation a{
+    display: block;
+    color: #626262;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
-.navigation ul li:first-child{
+.navigation li:first-child{
     margin-left: 0px;
 }
 .navigation a:hover{
     color: lightskyblue;
 }
-.navigation ul li{
+.navigation li{
     list-style: none;
     display: inline-block;
     margin-left: 80px;
