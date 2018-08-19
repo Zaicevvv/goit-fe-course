@@ -8,25 +8,23 @@ body{
 .wrapper{
     width: 900px;
     margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 44px;
 }
-header{
-    width: 513px;
+.pageheader{
     margin: 0 auto;
-    margin-top: 77px;
     margin-bottom: 77px;
 }
-ul{
-    font-size: 0;
-}
-a{
-    font-size: 14px;
+.navigation{
+    font-size: 0px;
+    text-align: center;
 }
 .navigation a{
     display: block;
     color: #626262;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -40,6 +38,10 @@ a{
     list-style: none;
     display: inline-block;
     margin-left: 80px;
+}
+.content-list-item{
+    display: inline-block;
+    width: 420px;
 }
 .underimg{
     font-family: Ubuntu;
