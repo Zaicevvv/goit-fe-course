@@ -1,12 +1,14 @@
 html{
     box-sizing:border-box;
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,900');
 }
 *,
 *::before, 
 *::after{
 	box-sizing: inherit;
+}
+body{
+    margin: 0;
 }
 .wrapper{
     width: 1140px;
@@ -22,13 +24,15 @@ html{
 nav{
     float: right;
     width: 475px;
+    margin-top: 10px;
 }
 .logo{
     float: left;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     color: grey;
+    text-decoration: none;
 }
 .logo::first-letter{
     color: #1abc9c;
@@ -83,8 +87,8 @@ nav{
 .d{
     float: left;
     margin-right: 10px;
-    position: absolute;/*2. поднимаем над потоком*/
-    bottom: 0; /*3. прижимаем к низу его родителя. в данном случае li*/
+    position: absolute;
+    bottom: 0;
     text-transform: uppercase;
 }
 .d:last-child{
@@ -102,11 +106,16 @@ nav{
 .news{
     margin: 0 auto;
 }
+.news-list{
+    margin: 0;
+    padding: 0;
+  }
 .div{
     float: left;
     width: 350px;
     height: 600px;
     margin-right: 30px;
+    list-style: none;
 }
 .div:last-child{
     margin-right: 0px;
@@ -116,15 +125,31 @@ img {
     max-width: 100%;
     height: auto;
 }
+.text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #828080;
+}
 .btn {
+    margin: 0;
+    padding: 0;
     width: 164px;
     height: 60px;
-    background: #1abc9c;
-    font-size: 20px;
+    background: #4ec6ab;
+    font-size: 16px;
     color: white;
     display: block;
-    font-weight: 400;
-  }
+    font-weight: 300;
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+.news-title{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #555252;
+}
 
 
 
@@ -142,7 +167,7 @@ img {
   width: 255px;
   height: 322px;
   list-style: none;
-  position: relative;/*1. указываем, элемент, от которого будет вестись отсчет положения абсолютно позиционированных элементов*/
+  position: relative;
 }
 
 .features-list li:nth-child(4n){
