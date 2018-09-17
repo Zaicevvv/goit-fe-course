@@ -2,81 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hw5</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hw5</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="masthead clearfix">
-            <nav>
-                <a href="#" class="logo">mart</a>
-                <ul class="menu clearfix">
-                    <li>
-                        <a href="#">home</a>
-                    </li>
-                    <li>
-                        <a href="#">about us</a>
-                    </li>
-                    <li>
-                        <a href="#">page</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
-                    </li>
-                    <li>
-                        <a href="#">blog</a>
-                    </li>
-                    <li>
-                        <a href="#">contact us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="background">
-                <img src="img/bg.jpg" alt="bg" class="bg">
-                <h1 class="h1">affordable paris tours</h1>
-                <h3 class="h3">city tours / tour tickets / tour guides</h3>
-            </section>
-            <section class="collection">
-                <h2 class="h2">new collection</h2>
-                <ul class="collection-list clearfix">
-                    <li class="collection-list-item">
-                        <img src="img/coll1.jpg" alt="coll1" width="255" height="322">
-                        <div class="collection-list-descr clearfix">
-                            <p class="collection-list-name">blue tshirt</p>
-                            <p class="collection-list-price">&#36;26</p>
-                        </div>
-                    </li>
-                    <li class="collection-list-item">
-                        <img src="img/coll2.jpg" alt="coll2" width="255" height="322">
-                        <div class="collection-list-descr clearfix">
-                            <p class="collection-list-name">woman shirt</p>
-                            <p class="collection-list-price">&#36;31</p>
-                        </div>
-                    </li>
-                    <li class="collection-list-item">
-                        <img src="img/coll3.jpg" alt="coll3" width="255" height="322">
-                        <div class="collection-list-descr clearfix">
-                            <p class="collection-list-name">yellow tshirt</p>
-                            <p class="collection-list-price">&#36;21</p>
-                        </div>
-                    </li>
-                    <li class="collection-list-item">
-                        <img src="img/coll4.jpg" alt="coll4" width="255" height="322">
-                        <div class="collection-list-descr clearfix">
-                            <p class="collection-list-name">cool lingerie</p>
-                            <p class="collection-list-price">&#36;56</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </div>
+  <div class="wrapper">
+    <header class="masthead clearfix">
+      <nav>
+        <a href="#" class="logo">mart</a>
+        <ul class="menu clearfix">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about us</a>
+          </li>
+          <li>
+            <a href="#">page</a>
+          </li>
+          <li>
+            <a href="#">shop</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="slider">
+        <button class="slider-ctrl slider-ctrl-prev"></button>
+        <button class="slider-ctrl slider-ctrl-next"></button>
+        <ul class="slides">
+          <li class="slides-item">
+            <img src="img/bg.jpg" alt="image" class="slides-image">
+            <p class="slides-descr">
+              <span>affordable paris tours</span>
+              city tours / tour tickets / tour guides</p>
+          </li>
+        </ul>
+      </div>
+      <section class="collection">
+        <h2 class="h2">new collection</h2>
+        <ul class="collection-list clearfix">
+          <li class="collection-list-item">
+            <img src="img/coll1.jpg" alt="coll1" width="255" height="322">
+            <div class="collection-list-descr clearfix">
+              <p class="collection-list-name">blue tshirt</p>
+              <p class="collection-list-price">&#36;26</p>
+            </div>
+          </li>
+          <li class="collection-list-item">
+            <img src="img/coll2.jpg" alt="coll2" width="255" height="322">
+            <div class="collection-list-descr clearfix">
+              <p class="collection-list-name">woman shirt</p>
+              <p class="collection-list-price">&#36;31</p>
+            </div>
+          </li>
+          <li class="collection-list-item">
+            <img src="img/coll3.jpg" alt="coll3" width="255" height="322">
+            <div class="collection-list-descr clearfix">
+              <p class="collection-list-name">yellow tshirt</p>
+              <p class="collection-list-price">&#36;21</p>
+            </div>
+          </li>
+          <li class="collection-list-item">
+            <img src="img/coll4.jpg" alt="coll4" width="255" height="322">
+            <div class="collection-list-descr clearfix">
+              <p class="collection-list-name">cool lingerie</p>
+              <p class="collection-list-price">&#36;56</p>
+            </div>
+          </li>
+        </ul>
+        <div class="modal-backdrop">
+          <div class="modal"></div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+  </div>
 </body>
 
 </html>
