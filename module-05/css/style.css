@@ -243,8 +243,8 @@ img {
   z-index: 5;
 }
 
-.collection-list-item:hover > .submenu {
-  display: block;
+.collection-list-item:hover > .overlay {
+  opacity: 1;
 }
 .submenu-item {
   float: left;
