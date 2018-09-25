@@ -108,12 +108,11 @@ img {
 }
 
 .slider-ctrl-prev {
-  left: 230px;
   background-image: url(../img/prev.png);
 }
 
 .slider-ctrl-next {
-  right: 230px;
+  right: 0;
   background-image: url(../img/next.png);
 }
 
