@@ -239,7 +239,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  padding: 85px 34px;
+  padding: 80px 34px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -250,13 +250,21 @@ img {
   float: left;
   width: 50px;
   height: 50px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .add {
-  width: 170px;
+  width: 160px;
+  margin-bottom: 0;
+  background-color: #323232;
+}
+
+.submenu-item:nth-child(3n) {
+  margin-right: 0;
 }
 .submenu-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .submenu-icon {
@@ -266,6 +274,10 @@ img {
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.submenu-item:hover {
+  background-color: #1abc9c;
 }
 .icon1 {
   background-image: url(../img/icon1.png);
@@ -282,12 +294,14 @@ img {
 .icon4 {
   background-image: url(../img/icon4.png);
   float: left;
+  border-right: none;
 }
 
 .icon5 {
   background-image: url(../img/icon5.png);
   float: left;
-  width: 100px;
+  width: 110px;
+  border-left: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
