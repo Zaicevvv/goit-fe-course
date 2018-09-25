@@ -86,12 +86,13 @@ img {
 .slider {
   position: relative;
   height: 600px;
-  margin-bottom: 100px;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
 }
 
 .slider-title {
+  position: relative;
+  min-height: 600px;
 }
 
 .slider-ctrl {
@@ -121,7 +122,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  top: 50%;
+  width: 840px;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -171,6 +173,7 @@ img {
 }
 
 .collection {
+  padding-top: 100px;
   padding-bottom: 100px;
   width: 1140px;
   margin: 0 auto;
