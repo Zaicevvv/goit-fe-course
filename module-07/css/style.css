@@ -227,13 +227,13 @@ textarea {
 }
 
 .name,
-.mail,
+.email,
 textarea:invalid {
   border: 3px solid rgb(212, 20, 20);
 }
 
 .name,
-.mail,
+.email,
 textarea:valid {
   border: 3px solid rgb(22, 214, 22);
 }
