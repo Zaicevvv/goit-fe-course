@@ -33,6 +33,7 @@ img {
   justify-content: space-between;
 }
 .logo {
+  display: block;
   color: #fed136;
   text-decoration: none;
   font-size: 26px;
@@ -44,10 +45,8 @@ img {
   width: 480px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .menu li {
@@ -125,22 +124,8 @@ img {
   font-family: 'PT Sans', 'Roboto Slab', 'Montserrat', sans-serif;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.services-icon {
+.services-item:before {
+  content: '';
   display: block;
   width: 68px;
   height: 67px;
@@ -152,20 +137,20 @@ input[type='radio'].visually-hidden {
   margin-bottom: 30px;
 }
 
-.icon1 {
+.icon1:before {
   background-image: url(../img/Icon-Basket.png);
 }
 
-.icon2 {
+.icon2:before {
   background-image: url(../img/Icon-Laptop.png);
 }
 
-.icon3 {
+.icon3:before {
   background-image: url(../img/Icon-Locked.png);
 }
 
 .section-contact {
-  height: 670px;
+  padding-bottom: 80px;
   width: 1400px;
   margin: auto;
   background-color: #222222;
@@ -216,7 +201,8 @@ input:last-child {
   margin-bottom: 0;
 }
 
-#send-form {
+.btn {
+  border-radius: 5px;
   text-transform: uppercase;
   height: 66px;
   width: 240px;
@@ -230,7 +216,7 @@ input:last-child {
   transition: background-color 0.2s linear;
 }
 
-#send-form:hover {
+.btn:hover {
   background-color: #338073;
   cursor: pointer;
 }
@@ -243,11 +229,11 @@ textarea {
 .name,
 .mail,
 textarea:invalid {
-  outline: 3px solid rgb(212, 20, 20);
+  border: 3px solid rgb(212, 20, 20);
 }
 
 .name,
 .mail,
 textarea:valid {
-  outline: 3px solid rgb(22, 214, 22);
+  border: 3px solid rgb(22, 214, 22);
 }
