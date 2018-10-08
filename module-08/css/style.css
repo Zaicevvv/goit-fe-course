@@ -76,14 +76,16 @@ img {
 }
 
 .welcome-title {
+  margin: 0;
   margin-bottom: 15px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  font-family: 'Montserrat Bold', sans-serif;
+  font-family: 'Montserrat SemiBold', sans-serif;
 }
 
 .welcome-text {
+  margin: 0;
   padding: 0 50px;
   margin-bottom: 25px;
   font-size: 18px;
@@ -292,5 +294,9 @@ img {
 
   .partners-list {
     width: 900px;
+  }
+
+  .welcome {
+    padding: 0 174px;
   }
 }
