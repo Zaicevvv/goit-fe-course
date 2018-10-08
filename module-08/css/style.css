@@ -3,11 +3,6 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -37,6 +32,7 @@ img {
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
+  line-height: 24px;
   font-family: 'Montserrat Bold', sans-serif;
   text-transform: uppercase;
 }
@@ -45,6 +41,8 @@ img {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-item {
@@ -59,7 +57,7 @@ img {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 17px;
   font-family: 'Montserrat Bold', sans-serif;
 }
 
@@ -69,18 +67,18 @@ img {
 }
 
 .masthead {
-  background-image: url(../img/desktopbg.png);
+  background-image: url("../img/desktopbg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 70px;
 }
 
 .welcome-title {
   margin-bottom: 15px;
   font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
   font-family: 'Montserrat Bold', sans-serif;
 }
@@ -89,6 +87,7 @@ img {
   padding: 0 50px;
   margin-bottom: 25px;
   font-size: 18px;
+  line-height: 22px;
   font-family: 'Roboto Light', sans-serif;
 }
 
@@ -102,6 +101,7 @@ img {
   background-color: #ff4e50;
   border-radius: 30px;
   font-size: 14px;
+  line-height: 17px;
   font-family: 'Montserrat Bold', sans-serif;
 }
 
@@ -110,6 +110,7 @@ img {
   margin: 0;
   margin-bottom: 15px;
   font-size: 22px;
+  line-height: 26px;
   font-family: 'Montserrat Bold', sans-serif;
   color: #222222;
 }
@@ -121,17 +122,20 @@ img {
 
 .partners{
   text-align: center;
+  padding: 70px 0;
 }
 
 .partners-list {
   list-style: none;
-  width: 215px;
+  padding: 0;
+  margin: 0;
   margin: auto;
 }
 
 .partners-item {
   width: 215px;
   position: relative;
+  margin: 0 auto;
   margin-bottom: 27px;
 }
 
@@ -142,12 +146,14 @@ img {
 .partners-title {
   text-transform: capitalize;
   font-size: 14px;
+  line-height: 17px;
   font-family: 'Montserrat Bold', sans-serif;
   margin-bottom: 15px;
 }
 
 .partners-text {
   font-size: 14px;
+  line-height: 17px;
   color: #777777;
   font-family: 'Roboto Light', sans-serif;
 }
@@ -191,13 +197,13 @@ img {
   width: 290px;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 60px;
   text-decoration: none;
   padding: 10px 45px;
   border: 3px solid #ff4e50;
   color: #ff4e50;
   border-radius: 30px;
   font-size: 14px;
+  line-height: 17px;
   font-family: 'Montserrat Bold', sans-serif;
 }
 
@@ -218,7 +224,7 @@ img {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 768px;
+    width: 748px;
   }
 
   .masthead {
@@ -243,11 +249,13 @@ img {
 
   .welcome-title {
     font-size: 52px;
+    line-height: 62px;
     margin-bottom: 40px;
   }
 
   .welcome-text {
     font-size: 24px;
+    line-height: 29px;
     margin-bottom: 50px;
   }
 
@@ -277,12 +285,12 @@ img {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 958px) {
   .wrapper {
-    width: 1440px;
+    width: 938px;
   }
 
   .partners-list {
-    width: 960px;
+    width: 900px;
   }
 }
