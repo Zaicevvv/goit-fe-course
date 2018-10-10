@@ -1,0 +1,16 @@
+{
+  "name": "automat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync src -w"
+  },
+  "author": "Vladimir Zaicev <zaicevvv1991@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
