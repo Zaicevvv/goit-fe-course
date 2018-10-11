@@ -4,12 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "browser-sync src -w"
+    "server": "browser-sync src -w",
+    "dev": "npm run server",
+    "lint": "stylelint src/css/*.css",
+    "clean": "rimraf build && mkdir build",
+    "img": "imagemin src/img/* -o=build/img",
+    "css": "postcss src/css/*.css --use autoprefixer --use cssnano -d build/css",
+    "html": "html-minifier --input-dir src --output-dir build --collapse-whitespace --file-ext html",
+    "prebuild": "npm run lint",
+    "build": "npm run clean && npm run img && npm run css && npm run html"
   },
   "author": "Vladimir Zaicev <zaicevvv1991@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.26.0",
+    "cssnano": "^4.1.4",
+    "html-minifier": "^3.5.20",
+    "imagemin-cli": "^3.0.0",
+    "postcss-cli": "^6.0.0",
+    "rimraf": "^2.6.2",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0"
   }
